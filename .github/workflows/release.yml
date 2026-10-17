@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Build the zip
+        run: python scripts/build_zip.py
+
+      - name: Attach the zip to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/company-wiki.zip --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/company-wiki.zip --title "$GITHUB_REF_NAME" \
+              --notes "Paste the repo's link into Claude, ChatGPT or a coding agent and say: Install this for me. To install by hand, see INSTALL.md."
+          fi

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+dist/
+.env
+# A company folder holds a real company's folder links, choices and house rules. Keep it out of git.
+skills/company-wiki/company/
+/company-wiki-setup/
+*.skill
