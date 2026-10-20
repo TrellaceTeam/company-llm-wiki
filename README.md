@@ -114,7 +114,7 @@ Scheduled runs use your plan's usage. In our own runs a file took one to two min
 
 ## From Trellace
 
-[Trellace](https://www.trellace.com/?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki) works with B2B founders in the messy middle, after product-market fit and before a repeatable go-to-market team. That's usually $1 million to $10 million in annual revenue. We run our firm on this wiki, then rebuilt it so any team can run it with the tools they already have. We publish the methods we use because GTM needs more open source projects.
+[Trellace](https://www.trellace.com/?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki) works with B2B founders in the messy middle, after product-market fit and before a repeatable go-to-market team. We run our firm on this wiki, then rebuilt it so any team can run it with the tools they already have. We publish the methods we use because GTM needs more open source projects.
 
 - **Founders.** If something here is close to what you're working through, [book a 30-minute GTM Sparring Session](https://www.trellace.com/contact?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
 - **Investors.** Most of our work starts with an introduction from a fund. If a company you back comes to mind, [make an introduction](https://www.trellace.com/contact?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
