@@ -118,6 +118,7 @@ Scheduled runs use your plan's usage. In our own runs a file took one to two min
 
 - **Founders.** If something here is close to what you're working through, [book a 30-minute GTM Sparring Session](https://www.trellace.com/contact?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
 - **Investors.** Most of our work starts with an introduction from a fund. If a company you back comes to mind, [make an introduction](https://www.trellace.com/contact?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
+- **Newsletter.** Last Week in GTM is our weekly newsletter for B2B founders and their investors, out every Tuesday. [Sign up or read past issues](https://www.trellace.com/insights?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
 - **More free tools.** See everything we've published at [github.com/TrellaceTeam](https://github.com/TrellaceTeam).
 
 ## License
