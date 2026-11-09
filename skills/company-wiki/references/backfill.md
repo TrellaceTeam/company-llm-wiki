@@ -6,13 +6,13 @@ Fill the wiki from what the company already has: the files in the source folders
 
 List every file in the source folders, then apply the skip rules and the sharing check. Count what's left by folder, with the oldest and newest dates. The cutoff is the day setup ran. Files that change after it come in through runs.
 
-Tell the person in two lines, such as "Your sources hold 1,240 files from April 2021 to today. 930 pass the skip rules." Then give a rough time: in our own runs a source took one to two minutes, plus a review every ten sources. So 930 files is about 15 to 30 hours of work, spread over as many runs as the pace allows.
+Work out a rough time: in our own runs a source took one to two minutes, plus a review every ten sources. So 930 files is about 15 to 30 hours of work, spread over as many runs as the pace allows. During setup, these numbers go into the plan. Otherwise tell the person in two lines, such as "Your sources hold 1,240 files from April 2021 to today. 930 pass the skip rules, about 15 to 30 hours of work."
 
-**Done when** the person knows the count, the date range and the rough time.
+**Done when** the person knows the count, the date range and the rough time, or they're in setup's plan.
 
 ## 2. Run the pilot
 
-Ask: "How many files should the pilot read?" Options: "10 (recommended)", "20", "5".
+During setup, the pilot reads 10 files. Otherwise ask: "How many files should the pilot read?" Options: "10 (recommended)", "20", "5".
 
 Pick them from the last three months, so the person knows the facts and can judge the pages. Spread them across folders and kinds: at least one long transcript or call note, one decision or plan, one about a customer and one about the team. Ingest each through [ingest.md](ingest.md), oldest first, then review them through [review.md](review.md). The pilot's changes reach the wiki the way the setup's Approval line says.
 
@@ -24,26 +24,19 @@ Then show the person:
 - What was skipped, and why.
 - How the folder plan held up, and any folder you'd add.
 
-Ask for feedback, one question at a time:
+Then ask one question: "Open these three claims and check them against their sources. Do the pages look right?" Options: "Looks right, fill in the rest (recommended)", "Some changes first". On changes, ask what they'd change, such as the level of detail, something that shouldn't be in the wiki, or a name or a folder. Save each answer that should hold as a dated rule: style in `company/style.md`, folders in `company/structure.md`, names in `company/glossary.md`. Apply the rules to the pilot pages, then carry on.
 
-1. "How's the level of detail?" Options: "About right", "Too much, keep pages shorter", "Too little, keep more detail".
-2. "Is there anything here that shouldn't be in the wiki?" Options: "No", "Yes, I'll say what".
-3. "Are the names and folders right?" Options: "Yes", "I'll fix some".
-4. "Anything else you'd change about how pages read?"
-
-Save each answer that should hold as a dated rule: style in `company/style.md`, folders in `company/structure.md`, names in `company/glossary.md`. Then ask: "Should I apply these rules to the pilot pages now?" Options: "Yes", "No, they're fine".
-
-**Done when** the feedback is saved and the pilot pages follow it.
+**Done when** the person's answer is saved and the pilot pages follow it.
 
 ## 3. Pick a pace
 
-Ask: "How should I fill in the other {n} files?" Options, each with its trade-off:
+During setup, the plan already picked the pace. Otherwise ask: "How should I fill in the other {n} files?" Recommend option 1 when about 25 files or fewer are left or this app can't schedule, and option 3 otherwise. Options, each with its trade-off:
 
-1. "A little each run (recommended)." Each run adds up to 15 of the oldest files, beside anything new. That's about {n / 15} runs. It's steady and easy on the plan's usage limits.
+1. "A little each run." Each run adds up to 15 of the oldest files, beside anything new. That's about {n / 15} runs. It's steady and easy on the plan's usage limits.
 2. "All at once, now." In this chat, in batches of ten, with helpers reading side by side where this app has them. It's the fastest, about {hours} hours, and it uses a lot of the plan's usage at once. This chat has to stay open. It works best in a coding agent.
 3. "Its own schedule until it's done." A separate scheduled task, every few hours or every night, that does as much as a run allows. It's faster than option 1, and it doesn't tie up this chat.
 
-Save the choice on the Backfill line of `company/setup.md`. For option 3, setup schedules the task at its step 7.
+Save the choice on the Backfill line of `company/setup.md`. For option 3, setup schedules the task at its step 6.
 
 Then queue the history. Add a backfill row to the ledger for every file that passed step 1 and isn't read yet, with its Last changed time. Adding the rows once means no run has to list every file again, and the ledger shows exactly how far the backfill has got. When there are too many rows to add in one go, add them a folder at a time, and note in the log which folders are still to add.
 

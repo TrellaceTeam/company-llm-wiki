@@ -51,6 +51,7 @@ The first run after setup, or after a change to the setup, runs this short check
   - **Wiki ledger**, a Google Sheet with these columns: Source, File, Link, File ID, Last changed, Read on, Pages, Status, Note. [sources.md](sources.md#the-queue) lists the Status values.
   - **Drafts**, a folder, when every change waits as a draft.
   - **Wiki test**, the page the self-test leaves for the run check.
+  - **Setup in progress**, a Google Doc, only while setup runs in a chat app. It holds a copy of the `company/` files until the person saves their copy, then setup cuts it to one line.
 
 Keep the system folder out of shared drives, since every member of a shared drive can open every folder in it. Put the wiki folder where everyone can reach it. In a shared drive, each person's access comes from their role in that drive, so people with a Contributor role or higher can edit pages there. To keep pages comment-only, use a folder in the admin's My Drive shared with the whole company as Commenter, or a shared drive where the company has the Commenter role.
 
