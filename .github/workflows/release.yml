@@ -31,5 +31,5 @@ jobs:
             gh release upload "$GITHUB_REF_NAME" dist/company-wiki.zip --clobber
           else
             gh release create "$GITHUB_REF_NAME" dist/company-wiki.zip --title "$GITHUB_REF_NAME" \
-              --notes "Paste the repo's link into Claude, ChatGPT or a coding agent and say: Install this for me. To install by hand, see INSTALL.md."
+              --notes 'Paste this line into Claude, ChatGPT or a coding agent: "Set up this skill and install it for me: https://github.com/TrellaceTeam/company-llm-wiki". To install by hand, see INSTALL.md.'
           fi

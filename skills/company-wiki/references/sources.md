@@ -48,7 +48,7 @@ A file moved into a source folder keeps its old Last changed time, so step 1 mis
 - **Slides.** Read the slide text and speaker notes. Images are skipped.
 - **PDFs and Office files.** Read the text. A scan with no text can't be read, so log it as skipped.
 - **Images, audio and video.** Skip them, and log them as skipped. A recording counts through its transcript.
-- **Anything your tools can't open.** Try one file of each kind at setup's step 2, such as a OneNote notebook, which some connectors can't read. When a kind won't open, tell the person and offer to skip it, or to have someone export those files to Word or PDF, so they don't fail on every run.
+- **Anything your tools can't open.** Try one file of each kind at setup's step 2, such as a OneNote notebook, which some connectors can't read. When a kind won't open, plan to skip it and say so in setup's plan, with the option to have someone export those files to Word or PDF, so they don't fail on every run.
 
 ## Notes for common tools
 

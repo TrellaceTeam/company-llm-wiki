@@ -17,8 +17,8 @@ Checks, for each skill folder:
 - every Python script imports only the standard library, with no shell-outs,
   operating-system branches or network modules, so it runs in a chat app's
   sandbox as well as on a laptop
-- the brand appears only in links to github.com/TrellaceTeam and on the
-  first-run closing line that carries the session link
+- the brand appears only in links to github.com/TrellaceTeam, so the skill
+  never ends a reply with a sales line
 
 Exit code is 0 when every folder passes and 1 otherwise.
 """
@@ -54,10 +54,7 @@ BANNED_MODULES = {
 BANNED_CALLS = {"os.system": "shell-out", "os.popen": "shell-out", "sys.platform": "operating-system branch"}
 NETWORK_ALLOWED: set[str] = set()
 BRAND = re.compile(r"trellace", re.IGNORECASE)
-BRAND_OK = re.compile(
-    r"github\.com/TrellaceTeam/[a-z0-9-]+"
-    r"|https://www\.trellace\.com/contact\?utm_source=github&utm_medium=skill&utm_campaign=company-llm-wiki\)? with Trellace"
-)
+BRAND_OK = re.compile(r"github\.com/TrellaceTeam/[a-z0-9-]+")
 
 
 class FrontmatterError(ValueError):
@@ -267,7 +264,7 @@ def check_skill(folder: Path) -> list[str]:
             for number, line in enumerate(doc.read_text(encoding="utf-8-sig").splitlines(), start=1):
                 if BRAND.search(BRAND_OK.sub("", line)):
                     problems.append(f"{doc.relative_to(folder).as_posix()}:{number}: brand name outside a "
-                                    "github.com/TrellaceTeam link or the closing line")
+                                    "github.com/TrellaceTeam link")
     return problems
 
 

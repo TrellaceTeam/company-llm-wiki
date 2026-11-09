@@ -37,6 +37,6 @@ The admin gets the team's skill too when it goes to everyone. That's fine: both 
 
 ## 4. Try it
 
-Ask the admin to start a new chat, or ask a teammate, and ask a question the pilot pages answer, such as "What does a typical contract cost?" A good answer names and links the wiki pages it used. Save "Team rollout: done {date}" in `company/setup.md`.
+Give the admin a question the pilot pages answer, in a code block so it has a copy button, such as `What does a typical contract cost?` Ask them to paste it in a new chat, with New chat at the top left, or to send it to a teammate, then come back to this chat. A good answer names and links the wiki pages it used. Save "Team rollout: done {date}" in `company/setup.md`.
 
 When the wiki moves or the corrections doc changes, build the team's skill again and roll the new file out the same way.

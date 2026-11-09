@@ -4,11 +4,9 @@ Saved by the company-wiki skill on 14 October 2026. Edit any line, or ask for a 
 
 ## Setup progress
 - Tools: done 14 October 2026
-- Sources: done 14 October 2026
+- Plan: agreed by Priya Raman 14 October 2026
 - Home and self-test: done 14 October 2026
-- Folder plan: done 14 October 2026
-- Changes, reports and corrections: done 14 October 2026
-- Pilot and pace: done 14 October 2026
+- First pages: done 14 October 2026
 - Schedules: done 14 October 2026
 - Team rollout: done 14 October 2026
 - Saved copy: done 14 October 2026
@@ -26,7 +24,7 @@ Saved by the company-wiki skill on 14 October 2026. Edit any line, or ask for a 
 - Company: https://drive.google.com/drive/folders/FENNICK-COMPANY, through Google Drive. List changes by: files changed since a time. Check: once a week. Skip: the HR subfolder. Shared with everyone at Fennick, checked 14 October 2026
 - Product: https://drive.google.com/drive/folders/FENNICK-PRODUCT, through Google Drive. List changes by: files changed since a time. Check: once a week. Skip: nothing. Shared with everyone at Fennick, checked 14 October 2026
 - #ops: the Slack channel, through Slack. List changes by: messages since a time, one source per day. Check: every run. Skip: nothing. Open to everyone at Fennick, checked 14 October 2026
-- Skip everywhere: offer letters, payroll, anything with "confidential" in its title
+- Skip everywhere: offer letters, payroll, legal files, anything with "confidential" in its title
 
 ## Home
 - Home: Google Drive, see home.md
@@ -44,8 +42,8 @@ Saved by the company-wiki skill on 14 October 2026. Edit any line, or ask for a 
 - Admin: Priya Raman
 
 ## Runs
-- Run: every night at 2:07am Pacific, model the app's default, task "Company wiki run"
-- Tidy: Sundays at 6:07am Pacific, model Claude Opus, task "Company wiki tidy"
+- Run: every night at 2am Pacific, model the app's default, task "Company wiki run"
+- Tidy: Sundays at 6am Pacific, model Claude Opus, task "Company wiki tidy"
 - Backfill: a little each run, 15 files
 - Run size: up to 25 sources a run
 - Review: after every 10 sources
@@ -59,4 +57,5 @@ Saved by the company-wiki skill on 14 October 2026. Edit any line, or ask for a 
 - Reader: company-wiki-reader, built 14 October 2026, rolled out by an organization skill
 
 ## Notes
+- 14 October 2026: Priya changed three lines of the plan before her yes: hold people pages, merges and deletions for her, send reports by email, and fill in the history a little each run.
 - 14 October 2026: "Customer pages matter most. Keep the people pages short."

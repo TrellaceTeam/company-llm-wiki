@@ -6,7 +6,7 @@ For the admin, in a chat: how the wiki is doing, what's waiting for them, and ch
 
 Read the log and the ledger, then reply with:
 
-- **Health.** The last run, when it ran and its result, and the next one. Any missed runs, tools that stopped working, or sources that failed three times. When no scheduled run has happened since the last "Setup saved" entry, say so, and offer to start one now as setup's step 10 does.
+- **Health.** The last run, when it ran and its result, and the next one. Any missed runs, tools that stopped working, or sources that failed three times. When no scheduled run has happened since the last "Setup saved" entry, say so, and offer to finish setup's steps 8 and 9 now: a test run, the backfill start and the wrap-up.
 - **Since you last asked**, or the last seven days the first time. Sources read, pages created and changed, and up to five changed pages as links.
 - **Backfill.** Done, or how many files are left and about how many runs that takes at the current pace.
 - **Waiting for you.** How many held changes, drafts and setup suggestions there are.
@@ -29,4 +29,4 @@ Show each suggestion with the file and the line it would add or change. Ask: "Ad
 
 ## 4. Changes to the setup
 
-For a change such as "add the Sales folder", "check Meeting notes every hour" or "pause the backfill", redo only the step of [setup.md](setup.md) it belongs to, then save. When the change touches a schedule, change the scheduled task too, as [schedules.md](schedules.md) says. In a chat app, the next run sees the change once the person saves the new copy.
+For a change such as "add the Sales folder", "check Meeting notes every hour" or "pause the backfill", follow the rule for a later change in [setup.md](setup.md#steps). When the change touches a schedule, change the scheduled task too, as [schedules.md](schedules.md) says. In a chat app, the next run sees the change once the person saves the new copy.

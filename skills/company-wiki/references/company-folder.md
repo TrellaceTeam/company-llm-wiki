@@ -19,7 +19,8 @@ The company folder never holds source text, page text, passwords or keys. It hol
 1. `company/setup.md` in this skill's folder.
 2. `company/setup.md` in your working folder, in a chat where setup ran and the person hasn't installed the new copy yet.
 3. `company-wiki-setup/setup.md` in the project folder, where setup saves when the skill's folder is read-only.
-4. Files the person attached or added to the project.
+4. A "Setup in progress" doc in the system folder, when the person's message links one or you find one. Its first line names the step setup reached. Below it, each `company/` file has its own heading, such as "company/setup.md", with the file's text under it. Copy each file into a `company` folder in your working folder, and carry on from the first line under Setup progress that isn't done. The ledger shows which pilot files are already read.
+5. Files the person attached or added to the project.
 
 ## Save it
 
@@ -29,6 +30,8 @@ The company folder never holds source text, page text, passwords or keys. It hol
 | Claude, in a chat, the desktop app or Cowork | The skill's folder here is a copy that's gone when the chat ends. Write the changed files to a `company` folder in your working folder, then run `python <skill>/scripts/wiki.py pack --company <that folder> --out <your outputs folder>/company-wiki.skill` and share the file. `pack` keeps the company files already in the skill and lays yours over them |
 | ChatGPT or another chat app that runs Python | Run the same `pack` command with `--out <your outputs folder>/company-wiki.zip` and share the file |
 | An app that can't run code | Give the files as text, and ask the person to add them to a project. Scheduled runs need a saved copy, so suggest Claude, ChatGPT or a coding agent for those |
+
+During the first setup in a chat app, pack once, at setup's step 7. Until then, the "Setup in progress" doc in the system folder holds a copy, as [setup.md](setup.md#4-build-it) says.
 
 When you share a packed file, tell the person how to install it, one step per line:
 
@@ -57,13 +60,11 @@ Saved by the company-wiki skill on {date}. Edit any line, or ask for a change in
 
 ## Setup progress
 - Tools: {done {date} | not yet}
-- Sources: {done {date} | not yet}
+- Plan: {agreed by {admin} {date} | not yet}
 - Home and self-test: {done {date} | not yet}
-- Folder plan: {done {date} | not yet}
-- Changes, reports and corrections: {done {date} | not yet}
-- Pilot and pace: {done {date} | not yet}
+- First pages: {done {date} | not yet}
 - Schedules: {done {date} | not yet}
-- Team rollout: {done {date} | waiting, by choice | not yet}
+- Team rollout: {done {date} | waiting for {name} | waiting, by choice | not yet}
 - Saved copy: {done {date} | not yet}
 
 ## Tools

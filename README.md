@@ -10,10 +10,12 @@ A company wiki your AI assistant writes from the files your team already keeps, 
 Paste this into Claude, ChatGPT or a coding agent such as Claude Code or Codex:
 
 ```text
-Install this for me: https://github.com/TrellaceTeam/company-llm-wiki
+Set up this skill and install it for me: https://github.com/TrellaceTeam/company-llm-wiki
 ```
 
-Your assistant follows [INSTALL.md](INSTALL.md). It installs the skill, a set of steps your assistant follows, then walks you through setup in the same chat.
+Your assistant follows [INSTALL.md](INSTALL.md). It gets the skill, a set of steps your assistant follows, sets it up with you, then installs your own copy with your setup inside, so you install it once.
+
+If you can, connect Google Drive, or wherever your team keeps its files, to your assistant before you paste the line. In Claude, that's Customize, then Connectors. In ChatGPT, it's Plugins. Some apps see a new connection only in a new chat. When yours does, your assistant tells you what to click and gives you a line to paste there, and your setup picks up where it stopped.
 
 We built this method for our own firm. It has compiled more than 1,500 of our meeting notes, calls, decisions and docs into more than 1,000 cited pages, and our agents read it before they answer anything about a client. This repository is a clean port of it, with none of our data.
 
@@ -34,17 +36,15 @@ This is the version for a team that lives in shared folders and chat assistants:
 
 ## Setup
 
-Setup takes about 30 to 45 minutes, and most of it is a pilot on ten of your files. The assistant asks one question at a time.
+Setup takes about 30 to 45 minutes, and your part is a few of them. The assistant does the rest.
 
-1. **Your tools.** It checks what's connected, such as Google Drive, and shows you how to connect anything missing.
-2. **Your sources.** You name the folders the wiki learns from. It checks each one is shared with the whole company, and asks how often to check it and what to skip, such as HR files.
-3. **Your wiki's home.** By default, a new Google Drive folder shared with everyone. For SharePoint, Notion, Confluence or another tool, the assistant works out how the wiki's folders, pages and ledger map onto it, and writes its own instructions. Either way it runs a self-test there: it makes a test page, edits it, links it, finds it, moves it and writes to the ledger.
-4. **Your folders.** It proposes a few fixed top folders, such as Customers, People and Product, and you decide how much freedom it has below them.
-5. **How changes go live.** Straight in, held for you when they're about people or conflicts, or held as drafts. You pick when it tells you about a run, and how people report a wrong page.
-6. **A pilot.** It writes pages from ten recent files and shows you three claims to check. Your feedback becomes house rules. Then you pick how to fill in the rest of your history: a little each run, all at once, or on its own schedule until it's done.
-7. **The schedule.** It sets up the scheduled runs in your app.
-8. **Your team.** It builds a small skill for everyone else, with your wiki's link inside, and shows you how to give it to the whole company.
-9. **Your own copy.** It saves your setup inside your copy of the skill. In Claude or ChatGPT, it hands you one file to save. Then it starts one scheduled run and reads its log, to check it works with nobody watching.
+1. **It looks around.** It checks what's connected, such as Google Drive, and shows you how to connect anything missing.
+2. **It comes back with one plan.** Which folders to learn from, with each one's file count and sharing, and what to skip, such as HR files. Where the wiki lives, by default a new Google Drive folder shared with everyone. The top folders, such as Customers, People and Product, picked from a sample of your files. How changes go live, the schedule, how long your history takes to fill in, and how your team gets it.
+3. **You say yes**, or change any line first.
+4. **It builds everything.** The wiki's folders, a private log and ledger, and a self-test that makes a test page, edits it, links it, finds it and moves it. For SharePoint, Notion, Confluence or another tool, it works out how the wiki maps onto it and writes its own instructions.
+5. **It writes pages from ten recent files.** You check three claims against their sources. Anything you'd change becomes a house rule.
+6. **It schedules the runs**, and builds a small skill for everyone else, with your wiki's link inside.
+7. **You save your own copy.** In Claude or ChatGPT, it hands you one file to save. Then it starts one scheduled run and reads its log, to check it works with nobody watching, and starts filling in your history.
 
 ## Then it runs on its own
 
@@ -109,12 +109,12 @@ Scheduled runs use your plan's usage. In our own runs a file took one to two min
 | Path | What it's for |
 |---|---|
 | [skills/company-wiki/](skills/company-wiki/SKILL.md) | The skill: its modes, setup, the page rules, notes for Google Drive and other tools, schedules, the team's skill and the `wiki.py` script |
-| [INSTALL.md](INSTALL.md) | How an assistant, or you, installs it in each app |
+| [INSTALL.md](INSTALL.md) | How an assistant, or you, sets it up and installs it in each app |
 | [examples/fennick/](examples/fennick/README.md) | A fictional company's saved setup and two of its pages |
 
 ## From Trellace
 
-[Trellace](https://www.trellace.com/?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki) works with B2B founders in the messy middle, after product-market fit and before a repeatable go-to-market team. We run our firm on this wiki, then rebuilt it so any team can run it with the tools they already have. We publish the methods we use because GTM needs more open source projects.
+[Trellace](https://www.trellace.com/?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki) works with B2B startups to support their growth. We run our firm on this wiki, then rebuilt it so any team can run it with the tools they already have. We publish the methods we use because GTM needs more open source projects.
 
 - **Founders.** If something here is close to what you're working through, [book a 30-minute GTM Sparring Session](https://www.trellace.com/contact?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
 - **Investors.** Most of our work starts with an introduction from a fund. If a company you back comes to mind, [make an introduction](https://www.trellace.com/contact?utm_source=github&utm_medium=readme&utm_campaign=company-llm-wiki).
